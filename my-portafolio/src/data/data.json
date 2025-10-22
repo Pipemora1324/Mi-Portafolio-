@@ -1,0 +1,296 @@
+{
+  "hero": {
+    "name": "Tu Nombre Completo",
+    "profession": "Desarrollador Full Stack",
+    "phrase": "Transformo ideas en experiencias digitales increíbles",
+    "backgroundImage": "/images/hero-bg.jpg",
+    "ctaButtons": {
+      "projects": "Ver Proyectos",
+      "cv": "Descargar CV"
+    }
+  },
+  "capacidades": [
+    {
+      "name": "HTML5",
+      "icon": "html",
+      "color": "#E34F26"
+    },
+    {
+      "name": "CSS3",
+      "icon": "css",
+      "color": "#1572B6"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "color": "#3178C6"
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Next.js",
+      "icon": "nextjs",
+      "color": "#000000"
+    },
+    {
+      "name": "Python",
+      "icon": "python",
+      "color": "#3776AB"
+    },
+    {
+      "name": "Java",
+      "icon": "java",
+      "color": "#007396"
+    },
+    {
+      "name": "Node.js",
+      "icon": "nodejs",
+      "color": "#339933"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "tailwind",
+      "color": "#06B6D4"
+    }
+  ],
+  "sobreMi": {
+    "titulo": "Sobre Mí",
+    "bio": "Soy un desarrollador web apasionado por crear experiencias digitales que marquen la diferencia. Con experiencia en desarrollo frontend y backend, me especializo en construir aplicaciones modernas, escalables y centradas en el usuario. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.",
+    "imagen": "/images/perfil.jpg",
+    "detalles": [
+      "🎓 Estudiante de Ingeniería en Sistemas",
+      "💼 Freelancer con +2 años de experiencia",
+      "🌍 Basado en Colombia",
+      "☕ Amante del café y el código limpio"
+    ]
+  },
+  "fotosMias": [
+    {
+      "url": "/images/foto1.jpg",
+      "alt": "Foto personal 1"
+    },
+    {
+      "url": "/images/foto2.jpg",
+      "alt": "Foto personal 2"
+    },
+    {
+      "url": "/images/foto3.jpg",
+      "alt": "Foto personal 3"
+    },
+    {
+      "url": "/images/foto4.jpg",
+      "alt": "Foto personal 4"
+    }
+  ],
+  "misProyectos": [
+    {
+      "id": 1,
+      "titulo": "Cyber Ninja",
+      "descripcion": "Sitio web futurista con animaciones interactivas y diseño cyberpunk. Incluye efectos de partículas y transiciones suaves.",
+      "imagen": "/images/proyecto1.png",
+      "tecnologias": ["Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
+      "enlaceDemo": "https://proyecto1.com",
+      "enlaceGithub": "https://github.com/usuario/proyecto1",
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "titulo": "E-Commerce Dashboard",
+      "descripcion": "Panel de administración completo para tienda online con análisis en tiempo real y gestión de inventario.",
+      "imagen": "/images/proyecto2.png",
+      "tecnologias": ["React", "Node.js", "MongoDB", "Chart.js"],
+      "enlaceDemo": "https://proyecto2.com",
+      "enlaceGithub": "https://github.com/usuario/proyecto2",
+      "destacado": true
+    },
+    {
+      "id": 3,
+      "titulo": "App de Clima",
+      "descripcion": "Aplicación del clima con pronósticos precisos, mapas interactivos y diseño minimalista.",
+      "imagen": "/images/proyecto3.png",
+      "tecnologias": ["React Native", "OpenWeather API", "Redux"],
+      "enlaceDemo": "https://proyecto3.com",
+      "enlaceGithub": "https://github.com/usuario/proyecto3",
+      "destacado": false
+    },
+    {
+      "id": 4,
+      "titulo": "Portfolio CMS",
+      "descripcion": "Sistema de gestión de contenido personalizado para portfolios creativos con editor visual.",
+      "imagen": "/images/proyecto4.png",
+      "tecnologias": ["Next.js", "Sanity.io", "TypeScript"],
+      "enlaceDemo": "https://proyecto4.com",
+      "enlaceGithub": "https://github.com/usuario/proyecto4",
+      "destacado": false
+    }
+  ],
+  "misServicios": [
+    {
+      "id": 1,
+      "titulo": "Desarrollo Web",
+      "descripcion": "Creación de sitios web modernos, rápidos y responsivos utilizando las últimas tecnologías. Desde landing pages hasta aplicaciones web completas.",
+      "icono": "💻",
+      "caracteristicas": [
+        "Diseño responsive",
+        "SEO optimizado",
+        "Rendimiento superior",
+        "Código limpio y mantenible"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Diseño UI/UX",
+      "descripcion": "Interfaces visualmente atractivas y centradas en el usuario. Diseño que combina estética con funcionalidad para experiencias memorables.",
+      "icono": "🎨",
+      "caracteristicas": [
+        "Prototipos interactivos",
+        "Wireframes detallados",
+        "Sistema de diseño",
+        "Pruebas de usabilidad"
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Desarrollo de Apps",
+      "descripcion": "Aplicaciones móviles nativas y multiplataforma con React Native. Experiencias fluidas en iOS y Android.",
+      "icono": "📱",
+      "caracteristicas": [
+        "Multiplataforma",
+        "Notificaciones push",
+        "Integración con APIs",
+        "Publicación en stores"
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Asesoría Tecnológica",
+      "descripcion": "Guía estratégica para digitalizar procesos, mejorar presencia online y adoptar las mejores prácticas del desarrollo web.",
+      "icono": "🧠",
+      "caracteristicas": [
+        "Análisis técnico",
+        "Arquitectura de software",
+        "Optimización de código",
+        "Capacitación técnica"
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "E-Commerce Solutions",
+      "descripcion": "Tiendas online completas con pasarelas de pago, gestión de inventario y análisis de ventas.",
+      "icono": "🛒",
+      "caracteristicas": [
+        "Integración de pagos",
+        "Panel administrativo",
+        "Gestión de productos",
+        "Analytics avanzado"
+      ]
+    }
+  ],
+  "testimonios": [
+    {
+      "id": 1,
+      "nombre": "María López",
+      "cargo": "CEO en StartupXYZ",
+      "comentario": "Excelente trabajo y compromiso. Entregó el proyecto antes de tiempo y superó nuestras expectativas. Su atención al detalle y profesionalismo son incomparables. ¡100% recomendado!",
+      "avatar": "/images/testimonio1.jpg",
+      "rating": 5,
+      "empresa": "StartupXYZ"
+    },
+    {
+      "id": 2,
+      "nombre": "Carlos Ramírez",
+      "cargo": "Fundador de TechStore",
+      "comentario": "Transformó completamente nuestra presencia digital. El sitio web que desarrolló es rápido, moderno y ha aumentado nuestras ventas en un 40%. Un profesional excepcional.",
+      "avatar": "/images/testimonio2.jpg",
+      "rating": 5,
+      "empresa": "TechStore"
+    },
+    {
+      "id": 3,
+      "nombre": "Ana Martínez",
+      "cargo": "Gerente de Marketing",
+      "comentario": "Trabajar con él fue una experiencia fantástica. Muy comunicativo, creativo y siempre dispuesto a ir más allá. Nuestro proyecto quedó mejor de lo que imaginamos.",
+      "avatar": "/images/testimonio3.jpg",
+      "rating": 5,
+      "empresa": "Marketing Pro"
+    },
+    {
+      "id": 4,
+      "nombre": "Jorge Silva",
+      "cargo": "CTO en InnovaTech",
+      "comentario": "Un desarrollador con habilidades técnicas sólidas y gran capacidad para resolver problemas. Su código es limpio y bien documentado. Definitivamente volveré a trabajar con él.",
+      "avatar": "/images/testimonio4.jpg",
+      "rating": 5,
+      "empresa": "InnovaTech"
+    }
+  ],
+  "habilidadesBlandas": [
+    {
+      "id": 1,
+      "titulo": "Trabajo en Equipo",
+      "descripcion": "Colaboración efectiva con equipos multidisciplinarios para alcanzar objetivos comunes",
+      "icono": "🤝",
+      "nivel": 95
+    },
+    {
+      "id": 2,
+      "titulo": "Comunicación",
+      "descripcion": "Capacidad para expresar ideas técnicas de forma clara y comprensible para todos",
+      "icono": "💬",
+      "nivel": 90
+    },
+    {
+      "id": 3,
+      "titulo": "Creatividad",
+      "descripcion": "Pensamiento innovador para encontrar soluciones únicas a desafíos complejos",
+      "icono": "💡",
+      "nivel": 92
+    },
+    {
+      "id": 4,
+      "titulo": "Adaptabilidad",
+      "descripcion": "Flexibilidad para aprender nuevas tecnologías y adaptarse a cambios rápidamente",
+      "icono": "🔄",
+      "nivel": 88
+    },
+    {
+      "id": 5,
+      "titulo": "Liderazgo",
+      "descripcion": "Capacidad para guiar proyectos y motivar a equipos hacia el éxito",
+      "icono": "👑",
+      "nivel": 85
+    },
+    {
+      "id": 6,
+      "titulo": "Resolución de Problemas",
+      "descripcion": "Enfoque analítico para identificar y resolver desafíos de manera eficiente",
+      "icono": "🎯",
+      "nivel": 93
+    }
+  ],
+  "contacto": {
+    "email": "tucorreo@ejemplo.com",
+    "telefono": "+57 123 456 7890",
+    "ubicacion": "Pasto, Nariño, Colombia",
+    "linkedin": "https://linkedin.com/in/tuusuario",
+    "github": "https://github.com/tuusuario",
+    "facebook": "https://facebook.com/tuusuario",
+    "twitter": "https://twitter.com/tuusuario",
+    "instagram": "https://instagram.com/tuusuario",
+    "disponibilidad": "Disponible para proyectos freelance",
+    "qrCode": "/images/qr-contacto.png"
+  },
+  "footer": {
+    "derechosAutor": "Todos los derechos reservados",
+    "añoActual": 2025,
+    "mensajeAdicional": "Hecho con ❤️ y código"
+  }
+}
