@@ -176,3 +176,35 @@
     display: none;
   }
 }
+/* Proyectos - Overlay Hover */
+.proyecto-card {
+  position: relative;
+}
+
+.proyecto-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.proyecto-card:hover .proyecto-overlay {
+  opacity: 1;
+}
+
+.proyecto-btn {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.proyecto-btn:hover {
+  background: #0284c7;
+  color: white;
+}
