@@ -208,3 +208,11 @@
   background: #0284c7;
   color: white;
 }
+/* Servicios Swiper */
+.servicios-swiper {
+  padding: 40px 0 60px 0;
+}
+
+.servicios-swiper .swiper-slide {
+  height: auto;
+}
