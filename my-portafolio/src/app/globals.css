@@ -216,3 +216,12 @@
 .servicios-swiper .swiper-slide {
   height: auto;
 }
+
+/* Habilidades Blandas Swiper */
+.habilidades-swiper {
+  padding: 40px 0 60px 0;
+}
+
+.habilidades-swiper .swiper-slide {
+  height: auto;
+}
