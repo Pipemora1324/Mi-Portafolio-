@@ -63,3 +63,64 @@
 ::selection {
   @apply bg-blue-600 text-white;
 }
+/* Swiper custom styles */
+.capacidades-swiper {
+  padding: 20px 0 40px 0;
+  margin: 0 60px;
+}
+
+.capacidades-swiper .swiper-button-next,
+.capacidades-swiper .swiper-button-prev {
+  color: #0284c7;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.capacidades-swiper .swiper-button-next {
+  right: -60px;
+}
+
+.capacidades-swiper .swiper-button-prev {
+  left: -60px;
+}
+
+.dark .capacidades-swiper .swiper-button-next,
+.dark .capacidades-swiper .swiper-button-prev {
+  color: #38bdf8;
+  background: #1e293b;
+}
+
+.capacidades-swiper .swiper-button-next:after,
+.capacidades-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Responsive: ocultar flechas en móviles */
+@media (max-width: 768px) {
+  .capacidades-swiper {
+    margin: 0 50px;
+  }
+  
+  .capacidades-swiper .swiper-button-next {
+    right: -50px;
+  }
+  
+  .capacidades-swiper .swiper-button-prev {
+    left: -50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .capacidades-swiper {
+    margin: 0;
+  }
+  
+  .capacidades-swiper .swiper-button-next,
+  .capacidades-swiper .swiper-button-prev {
+    display: none;
+  }
+}
