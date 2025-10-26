@@ -1,6 +1,6 @@
 {
   "hero": {
-    "name": "Tu Nombre Completo",
+    "name": "Juan Felipe Mora Revelo",
     "profession": "Desarrollador Full Stack",
     "phrase": "Transformo ideas en experiencias digitales increíbles",
     "backgroundImage": "/images/hero-bg.jpg",
@@ -66,8 +66,8 @@
     "bio": "Soy un desarrollador web apasionado por crear experiencias digitales que marquen la diferencia. Con experiencia en desarrollo frontend y backend, me especializo en construir aplicaciones modernas, escalables y centradas en el usuario. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.",
     "imagen": "/images/perfil.jpg",
     "detalles": [
-      "🎓 Estudiante de Ingeniería en Sistemas",
-      "💼 Freelancer con +2 años de experiencia",
+      "🎓 Estudiante de Ingeniería en softwaree",
+      "💼 Estudiante con ganas de aprender",
       "🌍 Basado en Colombia",
       "☕ Amante del café y el código limpio"
     ]
