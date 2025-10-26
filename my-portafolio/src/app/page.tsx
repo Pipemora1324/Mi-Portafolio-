@@ -7,6 +7,7 @@ import MisProyectos from "./components/MisProyectos";
 import MisServicios from "./components/MisServicios";
 import Testimonios from "./components/Testimonios";
 import HabilidadesBlandas from "./components/HabilidadesBlandas";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -20,15 +21,7 @@ export default function Home() {
       <MisServicios />
       <Testimonios />
       <HabilidadesBlandas />
-      
-      <div className="section bg-gray-50 dark:bg-dark-900">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold mb-4">Solo falta el Footer</h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            Ya casi terminamos mi bro
-          </p>
-        </div>
-      </div>
+      <Footer />
     </main>
   );
 }
