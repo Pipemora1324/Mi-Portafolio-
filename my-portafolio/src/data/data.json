@@ -1,14 +1,10 @@
 {
-  "hero": {
-    "name": "Juan Felipe Mora Revelo",
-    "profession": "Desarrollador Full Stack",
-    "phrase": "Transformo ideas en experiencias digitales increíbles",
-    "backgroundImage": "/images/hero-bg.jpg",
-    "ctaButtons": {
-      "projects": "Ver Proyectos",
-      "cv": "Descargar CV"
-    }
-  },
+"hero": {
+  "name": "Juan Felipe Mora Revelo",
+  "profession": "Desarrollador Full Stack",
+  "phrase": "Creando experiencias digitales increibles",
+  "image": "/images/perfil.jpg"
+},
   "capacidades": [
     {
       "name": "HTML5",
