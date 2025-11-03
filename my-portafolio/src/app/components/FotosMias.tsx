@@ -62,7 +62,7 @@ export default function FotosMias() {
               <SwiperSlide key={index}>
                 <div className="relative w-full h-96 rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src={foto.url}
+                    src="/images/fotomia1.jpeg"
                     alt={foto.alt}
                     fill
                     className="object-cover"

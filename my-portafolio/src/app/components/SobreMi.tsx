@@ -32,7 +32,7 @@ export default function SobreMi() {
               
               <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-dark-800">
                 <Image
-                  src={sobreMi.imagen}
+                  src="/images/sobremi.jpeg"
                   alt="Foto de perfil"
                   fill
                   className="object-cover"
