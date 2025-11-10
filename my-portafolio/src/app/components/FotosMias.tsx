@@ -62,7 +62,7 @@ export default function FotosMias() {
               <SwiperSlide key={index}>
                 <div className="relative w-full h-96 rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/fotomia1.jpeg"
+                    src={foto.url}
                     alt={foto.alt}
                     fill
                     className="object-cover"
@@ -72,7 +72,6 @@ export default function FotosMias() {
             ))}
           </Swiper>
 
-          {/* Flechas personalizadas */}
           <div className="fotos-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white dark:bg-dark-800 shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 dark:hover:bg-dark-700 transition-all">
             <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

@@ -39,6 +39,7 @@ export default function SobreMi() {
                   priority
                 />
               </div>
+              
 
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-500 dark:bg-blue-600 rounded-full blur-xl opacity-50"></div>
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-purple-500 dark:bg-purple-600 rounded-full blur-xl opacity-50"></div>

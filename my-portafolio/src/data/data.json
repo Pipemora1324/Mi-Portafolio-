@@ -68,24 +68,32 @@
       "☕ Amante del café y el código limpio"
     ]
   },
-  "fotosMias": [
-    {
-      "url": "/images/foto1.jpg",
-      "alt": "Foto personal 1"
-    },
-    {
-      "url": "/images/foto2.jpg",
-      "alt": "Foto personal 2"
-    },
-    {
-      "url": "/images/foto3.jpg",
-      "alt": "Foto personal 3"
-    },
-    {
-      "url": "/images/foto4.jpg",
-      "alt": "Foto personal 4"
-    }
-  ],
+ "fotosMias": [
+  {
+    "url": "/images/fotomia1.jpeg",
+    "alt": "Foto personal 1"
+  },
+  {
+    "url": "/images/fotomia2.jpeg",
+    "alt": "Foto personal 2"
+  },
+  {
+    "url": "/images/fotomia3.jpeg",
+    "alt": "Foto personal 3"
+  },
+  {
+    "url": "/images/fotomia4.jpeg",
+    "alt": "Foto personal 4"
+  },
+  {
+    "url": "/images/fotomia5.jpeg",
+    "alt": "Foto personal 5"
+  },
+  {
+    "url": "/images/fotomia6.jpeg",
+    "alt": "Foto personal 6"
+  }
+],
   "misProyectos": [
     {
       "id": 1,
