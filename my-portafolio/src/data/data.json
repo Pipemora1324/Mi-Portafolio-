@@ -207,12 +207,12 @@
   "testimonios": [
     {
       "id": 1,
-      "nombre": "María López",
-      "cargo": "CEO en StartupXYZ",
+      "nombre": "Gabriel Betancur",
+      "cargo": "Ingeniero De Sistemas",
       "comentario": "Excelente trabajo y compromiso. Entregó el proyecto antes de tiempo y superó nuestras expectativas. Su atención al detalle y profesionalismo son incomparables. ¡100% recomendado!",
       "avatar": "/images/testimonio1.jpg",
       "rating": 5,
-      "empresa": "StartupXYZ"
+      "empresa": "Independiente"
     },
     {
       "id": 2,
