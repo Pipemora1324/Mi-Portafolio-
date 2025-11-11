@@ -287,15 +287,15 @@
     }
   ],
   "contacto": {
-    "email": "tucorreo@ejemplo.com",
-    "telefono": "+57 123 456 7890",
+    "email": "JUANFELIPEMORAREVELO@gmail.com",
+    "telefono": "+57 315 323 2963",
     "ubicacion": "Pasto, Nariño, Colombia",
     "linkedin": "https://linkedin.com/in/tuusuario",
     "github": "https://github.com/tuusuario",
     "facebook": "https://facebook.com/tuusuario",
     "twitter": "https://twitter.com/tuusuario",
     "instagram": "https://instagram.com/tuusuario",
-    "disponibilidad": "Disponible para proyectos freelance",
+    "disponibilidad": "Disponible para proyectos y trabajos",
     "qrCode": "/images/qr-contacto.png"
   },
   "footer": {
