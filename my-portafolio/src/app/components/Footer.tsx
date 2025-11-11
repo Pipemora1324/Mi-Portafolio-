@@ -33,11 +33,11 @@ export default function Footer() {
             <div className="space-y-3">
               <a href="mailto:tu@email.com" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <Mail size={18} />
-                <span>tu@email.com</span>
+                <span>JUANFELIPEMORAREVELO@email.com</span>
               </a>
               <a href="tel:+573001234567" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <Phone size={18} />
-                <span>+57 300 123 4567</span>
+                <span>+57 315 23 2963</span>
               </a>
               <div className="flex items-center gap-3">
                 <MapPin size={18} />
