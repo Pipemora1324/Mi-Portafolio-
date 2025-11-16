@@ -104,11 +104,10 @@
     {
       "id": 1,
       "titulo": "Cyber Ninja",
-      "descripcion": "Sitio web futurista con animaciones interactivas y diseño cyberpunk. Incluye efectos de partículas y transiciones suaves.",
-      "imagen": "/images/proyecto1.png",
-      "tecnologias": ["Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
-      "enlaceDemo": "https://proyecto1.com",
-      "enlaceGithub": "https://github.com/usuario/proyecto1",
+      "descripcion": "Sitio web dezarrollado para una clinica de odontologia ubicada en la ciudad de Pasto en Colombia .",
+      "imagen": "/images/Oraldental.jpeg",
+      "tecnologias": ["Hostinger", "Tailwind CSS", "Framer Motion", "Three.js"],
+      "enlaceDemo": "https://oraldentalgroup.com/equipo",
       "destacado": true
     },
     {
