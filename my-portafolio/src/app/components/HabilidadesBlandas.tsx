@@ -59,13 +59,13 @@ export default function HabilidadesBlandas() {
             className="py-8"
           >
             {habilidadesBlandas.map((habilidad: Habilidad, index: number) => (
-              <SwiperSlide key={habilidad.id}>
+              <SwiperSlide key={habilidad.id} className="h-auto">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-dark-700 dark:to-dark-600 p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-500 h-full flex flex-col"
+                  className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-dark-700 dark:to-dark-600 p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-500 flex flex-col h-full min-h-[200px] sm:min-h-[220px]"
                 >
                   <div className="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 text-center">
                     {habilidad.icono}
