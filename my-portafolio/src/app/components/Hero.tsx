@@ -67,12 +67,15 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex gap-4"
             >
-              <a href="#proyectos" className="btn-primary">
-                Ver Proyectos
-              </a>
-              <a href="#contacto" className="btn-secondary">
-                Contáctame
-              </a>
+            <a 
+            href="https://wa.me/qr/BE7FHCQLMIXQE1" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+          >
+            Contáctame
+          </a>
+
             </motion.div>
           </motion.div>
 
