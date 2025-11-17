@@ -3,10 +3,22 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { ExternalLink, Github } from 'lucide-react'
-import data from '@/data/data.json'
+import { useLanguage } from './LanguageProvider'
+
+interface Proyecto {
+  id: number
+  titulo: string
+  descripcion: string
+  imagen: string
+  tecnologias: string[]
+  enlaceDemo: string
+  enlaceGithub?: string
+  destacado: boolean
+}
 
 export default function MisProyectos() {
-  const { misProyectos } = data
+  const { t } = useLanguage()
+  const misProyectos: Proyecto[] = t.misProyectos || []
 
   return (
     <section id="proyectos" className="section bg-gray-50 dark:bg-dark-900">
@@ -17,14 +29,16 @@ export default function MisProyectos() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title gradient-text">MIS PROYECTOS</h2>
+          <h2 className="section-title gradient-text">
+            {t.navbar?.proyectos?.toUpperCase() || 'MIS PROYECTOS'}
+          </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Proyectos en los que he trabajado con pasion
+            Proyectos en los que he trabajado con pasión
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {misProyectos.map((proyecto, index) => (
+          {misProyectos.map((proyecto: Proyecto, index: number) => (
             <a
               key={proyecto.id ?? index}
               href={proyecto.enlaceDemo}
@@ -56,7 +70,7 @@ export default function MisProyectos() {
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  {proyecto.tecnologias.map((tech, i) => (
+                  {proyecto.tecnologias.map((tech: string, i: number) => (
                     <span
                       key={i}
                       className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium"

@@ -3,10 +3,11 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
-import data from '@/data/data.json'
+import { useLanguage } from './LanguageProvider'
 
 export default function Testimonios() {
-  const { testimonios } = data
+  const { t } = useLanguage()
+  const testimonios = t.testimonios || []
 
   return (
     <section id="testimonios" className="section bg-gray-50 dark:bg-dark-900">
@@ -67,7 +68,7 @@ export default function Testimonios() {
               </div>
 
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
-                {testimonio.comentario}
+                "{testimonio.comentario}"
               </p>
 
               <div className="mt-6 pt-6 border-t border-gray-200 dark:border-dark-700">

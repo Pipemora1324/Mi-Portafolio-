@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import data from '@/data/data.json'
+import { useLanguage } from './LanguageProvider'
 
 export default function SobreMi() {
-  const { sobreMi } = data
+  const { t } = useLanguage()
+  const sobreMi = t.sobreMi || {}
 
   return (
     <section id="sobre-mi" className="section bg-gray-50 dark:bg-dark-900">
@@ -16,7 +17,9 @@ export default function SobreMi() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title gradient-text">{sobreMi.titulo}</h2>
+          <h2 className="section-title gradient-text">
+            {sobreMi.titulo || 'Sobre Mí'}
+          </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
@@ -39,7 +42,6 @@ export default function SobreMi() {
                   priority
                 />
               </div>
-              
 
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-500 dark:bg-blue-600 rounded-full blur-xl opacity-50"></div>
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-purple-500 dark:bg-purple-600 rounded-full blur-xl opacity-50"></div>
@@ -58,7 +60,7 @@ export default function SobreMi() {
             </p>
 
             <div className="space-y-3">
-              {sobreMi.detalles.map((detalle, index) => (
+              {(sobreMi.detalles || []).map((detalle, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: 20 }}
