@@ -36,56 +36,70 @@ export default function MisServicios() {
           </p>
         </motion.div>
 
-        <Swiper
-          modules={[Autoplay, Navigation]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="py-8"
-        >
-          {misServicios.map((servicio: Servicio, index: number) => (
-            <SwiperSlide key={servicio.id}>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white dark:bg-dark-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-full border border-gray-100 dark:border-dark-600"
-              >
-                <div className="text-6xl mb-4">{servicio.icono}</div>
-                
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">
-                  {servicio.titulo}
-                </h3>
-                
-                <p className="text-gray-600 dark:text-gray-400 mb-6">
-                  {servicio.descripcion}
-                </p>
+        <div className="relative px-12">
+          <Swiper
+            modules={[Autoplay, Navigation]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            navigation={{
+              nextEl: '.swiper-button-next-servicios',
+              prevEl: '.swiper-button-prev-servicios',
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="py-8"
+          >
+            {misServicios.map((servicio: Servicio, index: number) => (
+              <SwiperSlide key={servicio.id}>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white dark:bg-dark-700 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-full border border-gray-100 dark:border-dark-600"
+                >
+                  <div className="text-5xl sm:text-6xl mb-4">{servicio.icono}</div>
+                  
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3 break-words">
+                    {servicio.titulo}
+                  </h3>
+                  
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-6">
+                    {servicio.descripcion}
+                  </p>
 
-                <ul className="space-y-2">
-                  {servicio.caracteristicas.map((caracteristica: string, i: number) => (
-                    <li
-                      key={i}
-                      className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
-                    >
-                      <span className="text-blue-600 dark:text-blue-400">✓</span>
-                      {caracteristica}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                  <ul className="space-y-2">
+                    {servicio.caracteristicas.map((caracteristica: string, i: number) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm sm:text-base text-gray-700 dark:text-gray-300"
+                      >
+                        <span className="text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1">✓</span>
+                        <span className="break-words">{caracteristica}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Flechas personalizadas AFUERA */}
+          <div className="swiper-button-prev-servicios absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
+            ←
+          </div>
+          <div className="swiper-button-next-servicios absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
+            →
+          </div>
+        </div>
       </div>
     </section>
   )
