@@ -114,7 +114,7 @@
       "id": 2,
       "titulo": "Plantsim",
       "descripcion": "PlantSim es una innovadora aplicación web desarrollada como trabajo final para los cursos de Estructura de Datos y Patrones de Software",
-      "imagen": "/images/Plantsim.png",
+      "imagen": "/images/Plantsim.jpeg",
       "tecnologias": ["Java", "Node.js", "Spring Boot", "Angular 17"],
       "enlaceDemo": "https://github.com/Pipemora1324/BigProyect",
       "enlaceGithub": "https://github.com/Pipemora1324/BigProyect",
