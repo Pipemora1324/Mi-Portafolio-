@@ -267,3 +267,59 @@
   }
 }
 
+/* Botones primarios y secundarios con colores del portafolio */
+.btn-primary {
+  background: linear-gradient(135deg, #3B82F6 0%, #A855F7 100%);
+  color: white;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3B82F6;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 2px solid #3B82F6;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .btn-secondary {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60A5FA;
+    border-color: #60A5FA;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(59, 130, 246, 0.25);
+  }
+}
+
+/* Manual dark mode con atributo */
+[data-color-scheme="dark"] .btn-secondary {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60A5FA;
+  border-color: #60A5FA;
+}
+
+[data-color-scheme="dark"] .btn-secondary:hover {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+
