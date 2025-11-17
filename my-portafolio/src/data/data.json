@@ -123,7 +123,7 @@
     },  
     {
       "id": 3,
-      "titulo": "App de Clima",
+      "titulo": "Sistema De Reservas",
       "descripcion": "Sistema web desarrollado con Django para la gestión y reserva de espacios institucionales.",
       "imagen": "/images/Reservas.jpeg",
       "tecnologias": ["Python", "Django", "JavaScript","SQLite3","PostgreSQL"],
