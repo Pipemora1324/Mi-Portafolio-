@@ -135,7 +135,7 @@
       "id": 4,
       "titulo": "Caza de Zombis",
       "descripcion": "Es un FPS de supervivencia ambientado en un apocalipsis zombi. El juego cuenta con tres mundos progresivos, cada uno con retos, IA propia, físicas realistas y un sistema de puntuación que evalúa la eficiencia del jugador.",
-      "imagen": "/images/proyecto4.png",
+      "imagen": "/images/Unity.jpeg",
       "tecnologias": ["Unity Engine", "C#", "NavMesh"],
       "enlaceDemo": "https://github.com/solartedaniers/zombie_V1",
       "enlaceGithub": "https://github.com/usuario/proyecto4",
