@@ -112,14 +112,14 @@
     },
     {
       "id": 2,
-      "titulo": "E-Commerce Dashboard",
-      "descripcion": "Panel de administración completo para tienda online con análisis en tiempo real y gestión de inventario.",
+      "titulo": "Plantsim",
+      "descripcion": "PlantSim es una innovadora aplicación web desarrollada como trabajo final para los cursos de Estructura de Datos y Patrones de Software",
       "imagen": "/images/proyecto2.png",
-      "tecnologias": ["React", "Node.js", "MongoDB", "Chart.js"],
-      "enlaceDemo": "https://proyecto2.com",
-      "enlaceGithub": "https://github.com/usuario/proyecto2",
+      "tecnologias": ["Java", "Node.js", "Spring Boot", "Angular 17"],
+      "enlaceDemo": "https://github.com/Pipemora1324/BigProyect",
+      "enlaceGithub": "https://github.com/Pipemora1324/BigProyect",
       "destacado": true
-    },
+    },  
     {
       "id": 3,
       "titulo": "App de Clima",
