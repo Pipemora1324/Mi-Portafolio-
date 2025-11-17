@@ -4,9 +4,16 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useLanguage } from './LanguageProvider'
 
+interface SobreMiData {
+  titulo: string
+  bio: string
+  imagen: string
+  detalles: string[]
+}
+
 export default function SobreMi() {
   const { t } = useLanguage()
-  const sobreMi = t.sobreMi || {}
+  const sobreMi: SobreMiData = t.sobreMi || { titulo: '', bio: '', imagen: '', detalles: [] }
 
   return (
     <section id="sobre-mi" className="section bg-gray-50 dark:bg-dark-900">
@@ -60,7 +67,7 @@ export default function SobreMi() {
             </p>
 
             <div className="space-y-3">
-              {(sobreMi.detalles || []).map((detalle, index) => (
+              {sobreMi.detalles.map((detalle: string, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: 20 }}
