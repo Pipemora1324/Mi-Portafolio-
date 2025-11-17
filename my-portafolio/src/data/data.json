@@ -126,7 +126,7 @@
       "titulo": "App de Clima",
       "descripcion": "Sistema web desarrollado con Django para la gestión y reserva de espacios institucionales. Permite a usuarios solicitar reservas con validación automática de conflictos de horarios, y a administradores gestionar espacios, confirmar reservas y visualizar estadísticas mediante gráficos interactivos.",
       "imagen": "/images/Reservas.jpeg",
-      "tecnologias": ["Python", "Django", "JavaScript","SQLite3"],
+      "tecnologias": ["Python", "Django", "JavaScript","SQLite3","PostgreSQL"],
       "enlaceDemo": "https://sistema-reservas-django.onrender.com",
       "enlaceGithub": "https://github.com/usuario/proyecto3",
       "destacado": false
