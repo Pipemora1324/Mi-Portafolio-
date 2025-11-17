@@ -94,7 +94,7 @@ export default function SobreMi() {
                 href="https://wa.me/qr/BE7FHCQLMIXQE1" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block btn-primary mt-4"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 mt-4"
               >
                 Contactame
               </a>
