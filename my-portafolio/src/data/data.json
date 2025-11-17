@@ -310,10 +310,15 @@
       "qrCode": "/images/qr-contacto.png"
     },
     "footer": {
-      "derechosAutor": "Todos los derechos reservados",
-      "añoActual": 2025,
-      "mensajeAdicional": "Hecho con ❤️ y código"
-    },
+  "titulo": "Mi Portafolio",
+  "descripcion": "Desarrollador apasionado por crear experiencias digitales increíbles",
+  "tituloContacto": "Contacto",
+  "tituloEnlaces": "Enlaces Rápidos",
+  "derechosAutor": "Todos los derechos reservados",
+  "añoActual": 2025,
+  "mensajeAdicional": "Hecho con amor"
+}
+,
     "navbar": {
       "inicio": "Inicio",
       "capacidades": "Capacidades",
@@ -634,10 +639,15 @@
       "qrCode": "/images/qr-contacto.png"
     },
     "footer": {
-      "derechosAutor": "All rights reserved",
-      "añoActual": 2025,
-      "mensajeAdicional": "Made with ❤️ and code"
-    },
+  "titulo": "My Portfolio",
+  "descripcion": "Developer passionate about creating amazing digital experiences",
+  "tituloContacto": "Contact",
+  "tituloEnlaces": "Quick Links",
+  "derechosAutor": "All rights reserved",
+  "añoActual": 2025,
+  "mensajeAdicional": "Made with love"
+}
+,
     "navbar": {
       "inicio": "Home",
       "capacidades": "Skills",
