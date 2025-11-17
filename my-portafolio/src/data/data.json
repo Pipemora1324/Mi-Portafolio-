@@ -124,7 +124,7 @@
     {
       "id": 3,
       "titulo": "App de Clima",
-      "descripcion": "Aplicación del clima con pronósticos precisos, mapas interactivos y diseño minimalista.",
+      "descripcion": "Sistema web desarrollado con Django para la gestión y reserva de espacios institucionales. Permite a usuarios solicitar reservas con validación automática de conflictos de horarios, y a administradores gestionar espacios, confirmar reservas y visualizar estadísticas mediante gráficos interactivos.",
       "imagen": "/images/Reservas.jpeg",
       "tecnologias": ["React Native", "OpenWeather API", "Redux"],
       "enlaceDemo": "https://sistema-reservas-django.onrender.com",
