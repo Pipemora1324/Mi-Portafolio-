@@ -103,10 +103,10 @@
   "misProyectos": [
     {
       "id": 1,
-      "titulo": "Cyber Ninja",
+      "titulo": "Oral Dental Group",
       "descripcion": "Sitio web dezarrollado para una clinica de odontologia ubicada en la ciudad de Pasto en Colombia .",
       "imagen": "/images/Oraldental.jpeg",
-      "tecnologias": ["Hostinger", "Tailwind CSS", "Framer Motion", "Three.js"],
+      "tecnologias": ["Hostinger", "Html", "Css"],
       "enlaceDemo": "https://oraldentalgroup.com/equipo",
       "destacado": true
     },
