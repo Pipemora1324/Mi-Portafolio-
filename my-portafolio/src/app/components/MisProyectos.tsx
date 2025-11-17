@@ -40,6 +40,11 @@ export default function MisProyectos() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 
+                {proyecto.destacado && (
+                  <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+                    Destacado
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
