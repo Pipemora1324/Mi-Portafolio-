@@ -67,6 +67,15 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex gap-4"
             >
+             <a
+              href="/CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-700 transition"
+            >
+              Ver mi CV
+            </a>
+
             <a 
             href="https://wa.me/qr/BE7FHCQLMIXQE1" 
             target="_blank"
