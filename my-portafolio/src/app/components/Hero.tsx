@@ -25,13 +25,13 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="space-y-6"
           >
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               className="text-gray-600 dark:text-gray-400 text-lg"
             >
               {hero.greeting || 'Hola soy'}
@@ -40,7 +40,7 @@ export default function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.15 }}
               className="text-5xl md:text-7xl font-bold gradient-text leading-tight"
             >
               {hero.name}
@@ -49,7 +49,7 @@ export default function Hero() {
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
               className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-semibold"
             >
               {hero.profession}
@@ -58,7 +58,7 @@ export default function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.3, delay: 0.25 }}
               className="text-xl text-gray-600 dark:text-gray-400"
             >
               {hero.phrase}
@@ -67,7 +67,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
               className="flex gap-4"
             >
              <a
@@ -87,19 +87,17 @@ export default function Hero() {
           >
             {hero.btnContact || 'Contáctame'}
           </a>
-
             </motion.div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="relative"
           >
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-              
               <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-dark-800">
                 <Image
                   src={hero.image}
@@ -107,9 +105,10 @@ export default function Hero() {
                   fill
                   className="object-cover"
                   priority
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-500 dark:bg-blue-600 rounded-full blur-xl opacity-50 animate-pulse"></div>
               <div className="absolute -top-4 -left-4 w-40 h-40 bg-purple-500 dark:bg-purple-600 rounded-full blur-xl opacity-50 animate-pulse"></div>
             </div>
