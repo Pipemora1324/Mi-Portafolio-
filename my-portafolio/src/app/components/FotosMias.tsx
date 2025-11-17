@@ -3,19 +3,24 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination, EffectCoverflow } from 'swiper/modules'
-import data from '@/data/data.json'
-
+import { EffectCoverflow, Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
+import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/effect-coverflow'
+import { useLanguage } from './LanguageProvider'
+
+interface Foto {
+  url: string
+  alt: string
+}
 
 export default function FotosMias() {
-  const { fotosMias } = data
+  const { t } = useLanguage()
+  const fotosMias: Foto[] = t.fotosMias || []
 
   return (
-    <section id="fotos-mias" className="section bg-white dark:bg-dark-950">
+    <section id="fotos" className="section bg-white dark:bg-dark-800">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,67 +28,52 @@ export default function FotosMias() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title gradient-text">FOTOS MÍAS</h2>
+          <h2 className="section-title gradient-text">GALERÍA PERSONAL</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Momentos que capturan mi esencia
+            Un vistazo a mi vida más allá del código
           </p>
         </motion.div>
 
-        <div className="relative px-16">
-          <Swiper
-            modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView="auto"
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            navigation={{
-              nextEl: '.fotos-button-next',
-              prevEl: '.fotos-button-prev',
-            }}
-            loop={true}
-            className="fotos-swiper"
-          >
-            {fotosMias.map((foto, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full h-96 rounded-3xl overflow-hidden shadow-2xl">
-                  <Image
-                    src={foto.url}
-                    alt={foto.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          <div className="fotos-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white dark:bg-dark-800 shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 dark:hover:bg-dark-700 transition-all">
-            <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </div>
-
-          <div className="fotos-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white dark:bg-dark-800 shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 dark:hover:bg-dark-700 transition-all">
-            <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
-        </div>
+        <Swiper
+          modules={[EffectCoverflow, Autoplay, Navigation, Pagination]}
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView="auto"
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          className="py-12"
+        >
+          {fotosMias.map((foto: Foto, index: number) => (
+            <SwiperSlide key={index} className="!w-[300px] md:!w-[400px]">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
+              >
+                <Image
+                  src={foto.url}
+                  alt={foto.alt}
+                  fill
+                  className="object-cover"
+                />
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   )
