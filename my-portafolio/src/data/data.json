@@ -136,7 +136,7 @@
       "titulo": "Portfolio CMS",
       "descripcion": "Sistema de gestión de contenido personalizado para portfolios creativos con editor visual.",
       "imagen": "/images/proyecto4.png",
-      "tecnologias": ["Next.js", "Sanity.io", "TypeScript"],
+      "tecnologias": ["Unity Engine", "Sanity.io", "TypeScript"],
       "enlaceDemo": "https://proyecto4.com",
       "enlaceGithub": "https://github.com/usuario/proyecto4",
       "destacado": false
