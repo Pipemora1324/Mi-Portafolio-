@@ -1,42 +1,34 @@
-import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "./components/ThemeProvider";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import { ThemeProvider } from './components/ThemeProvider'
+import { LanguageProvider } from './components/LanguageProvider'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-inter',
-});
-
-const poppins = Poppins({ 
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  subsets: ["latin"],
-  variable: '--font-poppins',
-});
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Mi Portafolio | Desarrollador Full Stack",
-  description: "Portafolio profesional de desarrollo web. Proyectos, servicios y habilidades.",
-  keywords: "desarrollador, portafolio, web developer, frontend, backend",
-};
+  title: 'Juan Felipe Mora - Portfolio',
+  description: 'Portafolio personal de Juan Felipe Mora Revelo - Desarrollador Full Stack',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
+      <body className={inter.className}>
+        <ThemeProvider>
+          <LanguageProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
