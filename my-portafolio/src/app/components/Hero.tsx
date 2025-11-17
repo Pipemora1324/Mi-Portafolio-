@@ -9,6 +9,9 @@ interface HeroData {
   profession: string
   phrase: string
   image: string
+  greeting?: string
+  btnCV?: string
+  btnContact?: string
 }
 
 export default function Hero() {
@@ -31,7 +34,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-gray-600 dark:text-gray-400 text-lg"
             >
-              Hola soy
+              {hero.greeting || 'Hola soy'}
             </motion.p>
 
             <motion.h1
@@ -73,7 +76,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-              Ver mi CV
+              {hero.btnCV || 'Ver mi CV'}
             </a>
 
             <a 
@@ -82,7 +85,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-semibold border-2 border-blue-600 dark:border-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900/50 hover:scale-105 transition-all duration-300"
           >
-            Contáctame
+            {hero.btnContact || 'Contáctame'}
           </a>
 
             </motion.div>
