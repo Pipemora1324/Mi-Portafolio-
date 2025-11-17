@@ -28,12 +28,13 @@ export default function Testimonios() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title gradient-text">TESTIMONIOS</h2>
+          <h2 className="section-title gradient-text">
+            {t.testimoniosTitle || 'TESTIMONIOS'}
+          </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Lo que dicen quienes han trabajado conmigo
+            {t.testimoniosSubtitle || 'Lo que dicen quienes han trabajado conmigo'}
           </p>
         </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonios.map((testimonio: Testimonio, index: number) => (
             <motion.div
@@ -53,7 +54,6 @@ export default function Testimonios() {
                     className="object-cover"
                   />
                 </div>
-                
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
                     {testimonio.nombre}
@@ -66,7 +66,6 @@ export default function Testimonios() {
                   </p>
                 </div>
               </div>
-
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonio.rating)].map((_: any, i: number) => (
                   <Star
@@ -76,11 +75,9 @@ export default function Testimonios() {
                   />
                 ))}
               </div>
-
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
                 "{testimonio.comentario}"
               </p>
-
               <div className="mt-6 pt-6 border-t border-gray-200 dark:border-dark-700">
                 <span className="text-6xl text-blue-600 dark:text-blue-400 opacity-20">
                   ❝
