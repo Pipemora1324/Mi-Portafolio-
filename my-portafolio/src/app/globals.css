@@ -225,3 +225,45 @@
 .habilidades-swiper .swiper-slide {
   height: auto;
 }
+/* Estilos personalizados para flechas de Swiper */
+.swiper-button-prev-capacidades,
+.swiper-button-next-capacidades,
+.swiper-button-prev-fotos,
+.swiper-button-next-fotos,
+.swiper-button-prev-servicios,
+.swiper-button-next-servicios,
+.swiper-button-prev-habilidades,
+.swiper-button-next-habilidades {
+  font-size: 1.25rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Hover effect */
+.swiper-button-prev-capacidades:hover,
+.swiper-button-next-capacidades:hover,
+.swiper-button-prev-fotos:hover,
+.swiper-button-next-fotos:hover,
+.swiper-button-prev-servicios:hover,
+.swiper-button-next-servicios:hover,
+.swiper-button-prev-habilidades:hover,
+.swiper-button-next-habilidades:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive - ocultar en pantallas muy pequeñas si es necesario */
+@media (max-width: 480px) {
+  .swiper-button-prev-capacidades,
+  .swiper-button-next-capacidades,
+  .swiper-button-prev-fotos,
+  .swiper-button-next-fotos,
+  .swiper-button-prev-servicios,
+  .swiper-button-next-servicios,
+  .swiper-button-prev-habilidades,
+  .swiper-button-next-habilidades {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
