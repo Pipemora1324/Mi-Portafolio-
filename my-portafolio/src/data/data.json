@@ -234,12 +234,12 @@
     },
     {
       "id": 4,
-      "nombre": "Jorge Silva",
-      "cargo": "CTO en InnovaTech",
-      "comentario": "Un desarrollador con habilidades técnicas sólidas y gran capacidad para resolver problemas. Su código es limpio y bien documentado. Definitivamente volveré a trabajar con él.",
+      "nombre": "Tatiana Villada",
+      "cargo": "Abogada",
+      "comentario": "Para ti pipe que logras que los sueños sean posibles atra vez de tu dedicación y disciplina con la tecnología demostrando que lo puedes cambiar todo por tus ganas de crecer y de construir un futuro mejor para la sociedad, gracias a tu esfuerzo de que en cada muestra de tu trajo dejas una huella permanente.",
       "avatar": "/images/testimonio4.jpg",
       "rating": 5,
-      "empresa": "InnovaTech"
+      "empresa": "Mi pareja"
     }
   ],
   "habilidadesBlandas": [
