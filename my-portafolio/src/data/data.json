@@ -4,7 +4,10 @@
       "name": "Juan Felipe Mora Revelo",
       "profession": "Estudiante De Ingeniería De Software",
       "phrase": "Creando experiencias digitales increíbles",
-      "image": "/images/perfil.jpg"
+      "image": "/images/perfil.jpg",
+      "greeting": "Hola soy",
+      "btnCV": "Ver mi CV",
+      "btnContact": "Contáctame"
     },
     "capacidades": [
       {
@@ -67,7 +70,8 @@
         "💼 Estudiante con ganas de aprender",
         "🌍 Basado en Colombia",
         "☕ Amante del café"
-      ]
+      ],
+      "btnContact": "Contactame"
     },
     "fotosMias": [
       {
@@ -99,6 +103,8 @@
         "alt": "Foto personal 7"
       }
     ],
+    "fotosMiasTitle": "GALERÍA PERSONAL",
+    "fotosMiasSubtitle": "Un vistazo a mi vida más allá del código",
     "misProyectos": [
       {
         "id": 1,
@@ -140,6 +146,8 @@
         "destacado": false
       }
     ],
+    "proyectosSubtitle": "Proyectos en los que he trabajado con pasión",
+    "featuredBadge": "Destacado",
     "misServicios": [
       {
         "id": 1,
@@ -202,6 +210,7 @@
         ]
       }
     ],
+    "serviciosSubtitle": "Soluciones tecnológicas adaptadas a tus necesidades",
     "testimonios": [
       {
         "id": 1,
@@ -240,6 +249,8 @@
         "empresa": "Mi pareja"
       }
     ],
+    "testimoniosTitle": "TESTIMONIOS",
+    "testimoniosSubtitle": "Lo que dicen quienes han trabajado conmigo",
     "habilidadesBlandas": [
       {
         "id": 1,
@@ -284,6 +295,8 @@
         "nivel": 93
       }
     ],
+    "habilidadesTitle": "HABILIDADES BLANDAS",
+    "habilidadesSubtitle": "Competencias que complementan mi expertise técnico",
     "contacto": {
       "email": "JUANFELIPEMORAREVELO@gmail.com",
       "telefono": "+57 315 323 2963",
@@ -315,7 +328,10 @@
       "name": "Juan Felipe Mora Revelo",
       "profession": "Software Engineering Student",
       "phrase": "Creating amazing digital experiences",
-      "image": "/images/perfil.jpg"
+      "image": "/images/perfil.jpg",
+      "greeting": "Hi, I'm",
+      "btnCV": "View my CV",
+      "btnContact": "Contact me"
     },
     "capacidades": [
       {
@@ -378,7 +394,8 @@
         "💼 Student eager to learn",
         "🌍 Based in Colombia",
         "☕ Coffee lover"
-      ]
+      ],
+      "btnContact": "Contact me"
     },
     "fotosMias": [
       {
@@ -410,6 +427,8 @@
         "alt": "Personal photo 7"
       }
     ],
+    "fotosMiasTitle": "PERSONAL GALLERY",
+    "fotosMiasSubtitle": "A glimpse into my life beyond code",
     "misProyectos": [
       {
         "id": 1,
@@ -451,6 +470,8 @@
         "destacado": false
       }
     ],
+    "proyectosSubtitle": "Projects I've worked on with passion",
+    "featuredBadge": "Featured",
     "misServicios": [
       {
         "id": 1,
@@ -513,6 +534,7 @@
         ]
       }
     ],
+    "serviciosSubtitle": "Technological solutions tailored to your needs",
     "testimonios": [
       {
         "id": 1,
@@ -551,6 +573,8 @@
         "empresa": "My Partner"
       }
     ],
+    "testimoniosTitle": "TESTIMONIALS",
+    "testimoniosSubtitle": "What people who have worked with me say",
     "habilidadesBlandas": [
       {
         "id": 1,
@@ -595,6 +619,8 @@
         "nivel": 93
       }
     ],
+    "habilidadesTitle": "SOFT SKILLS",
+    "habilidadesSubtitle": "Competencies that complement my technical expertise",
     "contacto": {
       "email": "JUANFELIPEMORAREVELO@gmail.com",
       "telefono": "+57 315 323 2963",
