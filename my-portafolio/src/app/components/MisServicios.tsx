@@ -25,7 +25,7 @@ export default function MisServicios() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           viewport={{ once: true }}
         >
           <h2 className="section-title gradient-text">
@@ -57,15 +57,9 @@ export default function MisServicios() {
             }}
             className="py-8"
           >
-            {misServicios.map((servicio: Servicio, index: number) => (
+            {misServicios.map((servicio: Servicio) => (
               <SwiperSlide key={servicio.id} className="h-auto">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-white dark:bg-dark-700 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-600 flex flex-col h-full"
-                >
+                <div className="bg-white dark:bg-dark-700 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-600 flex flex-col h-full">
                   <div className="text-3xl sm:text-4xl mb-4">{servicio.icono}</div>
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3 break-words">
                     {servicio.titulo}
@@ -84,7 +78,7 @@ export default function MisServicios() {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
