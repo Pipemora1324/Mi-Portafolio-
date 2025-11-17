@@ -22,7 +22,7 @@ export default function SobreMi() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
           <h2 className="section-title gradient-text">
@@ -34,7 +34,7 @@ export default function SobreMi() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
             className="relative"
           >
@@ -46,7 +46,9 @@ export default function SobreMi() {
                   alt="Foto de perfil"
                   fill
                   className="object-cover"
-                  priority
+                  loading="lazy"
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-500 dark:bg-blue-600 rounded-full blur-xl opacity-50"></div>
@@ -56,7 +58,7 @@ export default function SobreMi() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: true }}
             className="space-y-6"
           >
@@ -69,7 +71,7 @@ export default function SobreMi() {
                   key={index}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
+                  transition={{ duration: 0.3, delay: 0.2 + index * 0.05 }}
                   viewport={{ once: true }}
                   className="flex items-center gap-3 p-3 bg-white dark:bg-dark-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
@@ -83,7 +85,7 @@ export default function SobreMi() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               viewport={{ once: true }}
             >
               <a 
