@@ -5,9 +5,19 @@ import Image from 'next/image'
 import { Star } from 'lucide-react'
 import { useLanguage } from './LanguageProvider'
 
+interface Testimonio {
+  id: number
+  nombre: string
+  cargo: string
+  comentario: string
+  avatar: string
+  rating: number
+  empresa: string
+}
+
 export default function Testimonios() {
   const { t } = useLanguage()
-  const testimonios = t.testimonios || []
+  const testimonios: Testimonio[] = t.testimonios || []
 
   return (
     <section id="testimonios" className="section bg-gray-50 dark:bg-dark-900">
@@ -25,7 +35,7 @@ export default function Testimonios() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonios.map((testimonio, index) => (
+          {testimonios.map((testimonio: Testimonio, index: number) => (
             <motion.div
               key={testimonio.id}
               initial={{ opacity: 0, y: 30 }}
@@ -58,7 +68,7 @@ export default function Testimonios() {
               </div>
 
               <div className="flex gap-1 mb-4">
-                {[...Array(testimonio.rating)].map((_, i) => (
+                {[...Array(testimonio.rating)].map((_: any, i: number) => (
                   <Star
                     key={i}
                     size={20}
