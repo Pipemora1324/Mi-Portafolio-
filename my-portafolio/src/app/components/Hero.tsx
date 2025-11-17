@@ -71,7 +71,7 @@ export default function Hero() {
               href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-700 transition"
+              className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Ver mi CV
             </a>
@@ -80,7 +80,7 @@ export default function Hero() {
             href="https://wa.me/qr/BE7FHCQLMIXQE1" 
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary"
+            className="px-6 py-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-semibold border-2 border-blue-600 dark:border-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900/50 hover:scale-105 transition-all duration-300"
           >
             Contáctame
           </a>
