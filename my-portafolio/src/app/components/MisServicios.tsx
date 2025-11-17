@@ -32,7 +32,7 @@ export default function MisServicios() {
             {t.navbar?.servicios?.toUpperCase() || 'MIS SERVICIOS'}
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Soluciones tecnológicas adaptadas a tus necesidades
+            {t.serviciosSubtitle || 'Soluciones tecnológicas adaptadas a tus necesidades'}
           </p>
         </motion.div>
 
@@ -66,17 +66,13 @@ export default function MisServicios() {
                   viewport={{ once: true }}
                   className="bg-white dark:bg-dark-700 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-dark-600 flex flex-col h-full"
                 >
-                  {/* Emoji más pequeño */}
                   <div className="text-3xl sm:text-4xl mb-4">{servicio.icono}</div>
-                  
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3 break-words">
                     {servicio.titulo}
                   </h3>
-                  
                   <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-6 flex-grow">
                     {servicio.descripcion}
                   </p>
-
                   <ul className="space-y-2 mt-auto">
                     {servicio.caracteristicas.map((caracteristica: string, i: number) => (
                       <li
@@ -92,8 +88,7 @@ export default function MisServicios() {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Flechas personalizadas AFUERA */}
+          {/* Flechas */}
           <div className="swiper-button-prev-servicios absolute -left-2 sm:left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
             ←
           </div>

@@ -9,6 +9,7 @@ interface SobreMiData {
   bio: string
   imagen: string
   detalles: string[]
+  btnContact?: string
 }
 
 export default function SobreMi() {
@@ -39,7 +40,6 @@ export default function SobreMi() {
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-              
               <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-dark-800">
                 <Image
                   src="/images/sobremi.jpeg"
@@ -49,12 +49,10 @@ export default function SobreMi() {
                   priority
                 />
               </div>
-
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-500 dark:bg-blue-600 rounded-full blur-xl opacity-50"></div>
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-purple-500 dark:bg-purple-600 rounded-full blur-xl opacity-50"></div>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,7 +63,6 @@ export default function SobreMi() {
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               {sobreMi.bio}
             </p>
-
             <div className="space-y-3">
               {sobreMi.detalles.map((detalle: string, index: number) => (
                 <motion.div
@@ -83,7 +80,6 @@ export default function SobreMi() {
                 </motion.div>
               ))}
             </div>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -96,9 +92,8 @@ export default function SobreMi() {
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 mt-4"
               >
-                Contactame
+                {sobreMi.btnContact || 'Contactame'}
               </a>
-
             </motion.div>
           </motion.div>
         </div>

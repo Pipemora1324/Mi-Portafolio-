@@ -27,9 +27,9 @@ export default function FotosMias() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title gradient-text">GALERÍA PERSONAL</h2>
+          <h2 className="section-title gradient-text">{t.fotosMiasTitle || 'GALERÍA PERSONAL'}</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Un vistazo a mi vida más allá del código
+            {t.fotosMiasSubtitle || 'Un vistazo a mi vida más allá del código'}
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function FotosMias() {
             ))}
           </Swiper>
 
-          {/* Flechas personalizadas AFUERA */}
+          {/* Flechas fuera */}
           <div className="swiper-button-prev-fotos absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
             ←
           </div>

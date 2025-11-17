@@ -33,7 +33,7 @@ export default function MisProyectos() {
             {t.navbar?.proyectos?.toUpperCase() || 'MIS PROYECTOS'}
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 text-lg">
-            Proyectos en los que he trabajado con pasión
+            {t.proyectosSubtitle || 'Proyectos en los que he trabajado con pasión'}
           </p>
         </motion.div>
 
@@ -53,10 +53,9 @@ export default function MisProyectos() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                
                 {proyecto.destacado && (
                   <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
-                    Destacado
+                    {t.featuredBadge || 'Destacado'}
                   </div>
                 )}
               </div>
@@ -68,7 +67,6 @@ export default function MisProyectos() {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {proyecto.descripcion}
                 </p>
-
                 <div className="flex flex-wrap gap-2">
                   {proyecto.tecnologias.map((tech: string, i: number) => (
                     <span
