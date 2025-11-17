@@ -16,10 +16,14 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
+      // Cerrar menú móvil al hacer scroll
+      if (isMobileMenuOpen) {
+        setIsMobileMenuOpen(false)
+      }
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isMobileMenuOpen])
 
   // Cerrar menú al hacer clic fuera
   useEffect(() => {
