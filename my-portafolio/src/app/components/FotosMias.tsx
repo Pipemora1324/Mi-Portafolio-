@@ -40,6 +40,7 @@ export default function FotosMias() {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView="auto"
+            loop={true}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -58,7 +59,7 @@ export default function FotosMias() {
             className="py-12"
           >
             {fotosMias.map((foto: Foto, index: number) => (
-              <SwiperSlide key={index} className="!w-[300px] md:!w-[400px]">
+              <SwiperSlide key={index} className="!w-[280px] sm:!w-[300px] md:!w-[400px]">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -77,11 +78,11 @@ export default function FotosMias() {
             ))}
           </Swiper>
 
-          {/* Flechas AFUERA */}
-          <div className="swiper-button-prev-fotos absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg">
+          {/* Flechas personalizadas AFUERA */}
+          <div className="swiper-button-prev-fotos absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
             ←
           </div>
-          <div className="swiper-button-next-fotos absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg">
+          <div className="swiper-button-next-fotos absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center cursor-pointer text-white shadow-lg transition-all">
             →
           </div>
         </div>
