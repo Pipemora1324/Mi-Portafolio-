@@ -25,7 +25,7 @@ export default function Testimonios() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           viewport={{ once: true }}
         >
           <h2 className="section-title gradient-text">
@@ -36,13 +36,9 @@ export default function Testimonios() {
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonios.map((testimonio: Testimonio, index: number) => (
-            <motion.div
+          {testimonios.map((testimonio: Testimonio) => (
+            <div
               key={testimonio.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className="bg-white dark:bg-dark-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
@@ -52,6 +48,8 @@ export default function Testimonios() {
                     alt={testimonio.nombre}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1">
@@ -83,7 +81,7 @@ export default function Testimonios() {
                   ❝
                 </span>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
