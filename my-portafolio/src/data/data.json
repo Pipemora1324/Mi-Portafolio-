@@ -225,12 +225,12 @@
     },
     {
       "id": 3,
-      "nombre": "Ana Martínez",
-      "cargo": "Gerente de Marketing",
+      "nombre": "Daniers Solarte",
+      "cargo": "Estudiante De Ingeneria De Software",
       "comentario": "Trabajar con él fue una experiencia fantástica. Muy comunicativo, creativo y siempre dispuesto a ir más allá. Nuestro proyecto quedó mejor de lo que imaginamos.",
-      "avatar": "/images/testimonio3.jpg",
+      "avatar": "/images/testimonio3.jpeg",
       "rating": 5,
-      "empresa": "Marketing Pro"
+      "empresa": "Compañero De EStudio"
     },
     {
       "id": 4,
