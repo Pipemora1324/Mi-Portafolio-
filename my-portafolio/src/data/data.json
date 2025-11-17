@@ -125,7 +125,7 @@
       "id": 3,
       "titulo": "App de Clima",
       "descripcion": "Aplicación del clima con pronósticos precisos, mapas interactivos y diseño minimalista.",
-      "imagen": "/images/proyecto3.png",
+      "imagen": "/images/Reservas.jpeg",
       "tecnologias": ["React Native", "OpenWeather API", "Redux"],
       "enlaceDemo": "https://sistema-reservas-django.onrender.com",
       "enlaceGithub": "https://github.com/usuario/proyecto3",
