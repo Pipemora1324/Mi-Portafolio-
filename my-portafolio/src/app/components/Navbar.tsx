@@ -25,8 +25,7 @@ export default function Navbar() {
     { name: t.navbar?.capacidades || 'Capacidades', href: '#capacidades' },
     { name: t.navbar?.sobreMi || 'Sobre Mí', href: '#sobre-mi' },
     { name: t.navbar?.proyectos || 'Proyectos', href: '#proyectos' },
-    { name: t.navbar?.servicios || 'Servicios', href: '#servicios' },
-    { name: t.navbar?.contacto || 'Contacto', href: '#contacto' },
+    { name: t.navbar?.servicios || 'Servicios', href: '#servicios' }
   ]
 
   return (
