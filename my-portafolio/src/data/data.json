@@ -100,7 +100,8 @@
     
   }
 ],
-  "misProyectos": [
+  
+"misProyectos": [
     {
       "id": 1,
       "titulo": "Oral Dental Group",
@@ -126,7 +127,7 @@
       "descripcion": "Aplicación del clima con pronósticos precisos, mapas interactivos y diseño minimalista.",
       "imagen": "/images/proyecto3.png",
       "tecnologias": ["React Native", "OpenWeather API", "Redux"],
-      "enlaceDemo": "https://proyecto3.com",
+      "enlaceDemo": "https://sistema-reservas-django.onrender.com",
       "enlaceGithub": "https://github.com/usuario/proyecto3",
       "destacado": false
     },
