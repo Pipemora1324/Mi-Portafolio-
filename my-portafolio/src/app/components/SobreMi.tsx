@@ -90,9 +90,15 @@ export default function SobreMi() {
               transition={{ duration: 0.5, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <a href="#contacto" className="inline-block btn-primary mt-4">
+              <a 
+                href="https://wa.me/qr/BE7FHCQLMIXQE1" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block btn-primary mt-4"
+              >
                 Contactame
               </a>
+
             </motion.div>
           </motion.div>
         </div>
