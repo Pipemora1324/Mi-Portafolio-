@@ -24,7 +24,7 @@ export default function FotosMias() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
           <h2 className="section-title gradient-text">{t.fotosMiasTitle || 'GALERÍA PERSONAL'}</h2>
@@ -60,20 +60,17 @@ export default function FotosMias() {
           >
             {fotosMias.map((foto: Foto, index: number) => (
               <SwiperSlide key={index} className="!w-[280px] sm:!w-[300px] md:!w-[400px]">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
-                >
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src={foto.url}
                     alt={foto.alt}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 640px) 280px, (max-width: 768px) 300px, 400px"
                   />
-                </motion.div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
